@@ -74,240 +74,243 @@ eleventyNavigation:
 
 {% block body %}
 
+<!-- Usage Notes:
+We made this stitch to overlap the section below it, so if there's a patterned texture or image background on the next section below, it will overlap on top of it. Other Stitches like this would have a white gap between the cards an the next section. In order to make Stitches like this work, we need to add a padding top on the section below it to counteract the overlap. 
+
+ON MOBILE (360px): add padding-top: (654/16rem); using LESS, or padding-top: calc(654 / 16 * 1rem); if you're using SCSS, or padding-top: 40.875rem; if you're just using vanilla CSS.
+
+ON TABLET (768px): Reset to padding-top: (230/16rem); using LESS, padding-top: calc(230 / 16 * 1rem) for SCSS or padding-top: 15.625rem; for CSS
+
+Doing this will complete the overlapping "breaking the container" look.
+-->
+
     <!-- ============================================ -->
     <!--                    Hero                      -->
     <!-- ============================================ -->
 
-    <section id="hero">
+    <section id="hero-1249">
         <div class="cs-container">
-            <div class="cs-flex-group">
-                <span class="cs-topper">mountain hiking society</span>
-                <h1 class="cs-title">Explore the World with Exciting People</h1>
+            <div class="cs-content">
+                <h1 class="cs-title">Redwood Engineering Construction</h1>
                 <p class="cs-text">
-                    Tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius. Nibh tortor id aliquet lectus proin nibh condimentum.
+                    Delivering expert engineering and construction solutions across the Bay Area — on time, on budget, with unmatched craftsmanship.
                 </p>
-                <a href="/about" class="cs-button-solid">Explore More</a>
-                <a href="/contact" class="cs-button-transparent">
-                    <img
-                    class="cs-img"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Hero/play.svg"
-                    alt="play icon"
-                    width="17"
-                    height="17"/>
-                    Get in Touch
-                </a>
+                <a href="" class="cs-button-solid">Get A Quote</a>
             </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <a href="" class="cs-link">
+                        <h3 class="cs-h3">Parks + Playgrounds</h3>
+                        <p class="cs-item-text">
+                            We’ve helped thousands of organizations transform to become relevant of helped thousands.
+                        </p>
+                    </a>
+                    <picture class="cs-item-background">
+                        <source media="(max-width: 600px)" srcset="http://www.redwoodengineeringcon.com/wp-content/uploads/2018/10/10-10-18NewBralyParkStructures-02-1680x600.jpg">
+                        <source media="(min-width: 601px)" srcset="http://www.redwoodengineeringcon.com/wp-content/uploads/2018/10/10-10-18NewBralyParkStructures-02-1680x600.jpg">
+                        <img decoding="async" src="http://www.redwoodengineeringcon.com/wp-content/uploads/2018/10/10-10-18NewBralyParkStructures-02-1680x600.jpg" alt="playground" width="413" height="374" aria-hidden="true">
+                    </picture>
+                </li>
+                <li class="cs-item">
+                    <a href="" class="cs-link">
+                        <h3 class="cs-h3">Excavation + Grading</h3>
+                        <p class="cs-item-text">
+                            We’ve helped thousands of organizations transform to become relevant of helped thousands.
+                        </p>
+                    </a>
+                    <picture class="cs-item-background">
+                        <source media="(max-width: 600px)" srcset="http://www.redwoodengineeringcon.com/wp-content/uploads/2018/10/slide1-1680x600.jpg">
+                        <source media="(min-width: 601px)" srcset="http://www.redwoodengineeringcon.com/wp-content/uploads/2018/10/slide1-1680x600.jpg">
+                        <img decoding="async" src="http://www.redwoodengineeringcon.com/wp-content/uploads/2018/10/slide1-1680x600.jpg" alt="construction" width="413" height="374" aria-hidden="true">
+                    </picture>
+                </li>
+                <li class="cs-item">
+                    <a href="" class="cs-link">
+                        <h3 class="cs-h3">Cityscape Projects</h3>
+                        <p class="cs-item-text">
+                            We’ve helped thousands of organizations transform to become relevant of helped thousands.
+                        </p>
+                    </a>
+                    <picture class="cs-item-background">
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/structure3.jpg">
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/structure3.jpg">
+                        <img decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/structure3.jpg" alt="construction" width="413" height="374" aria-hidden="true">
+                    </picture>
+                </li>
+            </ul>
         </div>
 
-        <!-- Background Image -->
-        <picture class="cs-picture">
-            <source media="(max-width: 600px)" srcset="/assets/images/landing-m.webp">
-            <source media="(min-width: 601px)" srcset="/assets/images/landing.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/landing.jpg" alt="new home" width="2500" height="1667" loading="eager">
+        <!-- Background Image, there's a background image in the CSS for the parallax effect you'll need to change as well if you swap out our images -->
+        <picture class="cs-background">
+            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/construction.jpg">
+            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/construction.jpg">
+            <img decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/construction.jpg" alt="construction" width="2250" height="1500" aria-hidden="true">
         </picture>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                About Us Section              -->
+    <!-- ============================================ -->
+
+    <section id="sbs-2291">
+        <div class="cs-container">
+            <!-- Left Content Section-->
+            <div class="cs-content">
+                <span class="cs-topper">About Us</span>
+                <h2 class="cs-title">Engineering Reliability. Building the Bay Area.</h2>
+                <p class="cs-text">
+                    Redwood Engineering Construction is a licensed and insured contractor specializing in excavation, grading, underground utilities, drainage, parks, and structural repair throughout the San Francisco Bay Area. Since 2015, we’ve built a reputation for completing both public and private projects on time, on budget, and to the highest standards of quality and safety.
+                </p>
+                <div class="cs-features">
+                    <h3 class="cs-h3">Key Features:</h3>
+                    <ul class="cs-ul">
+                        <li class="cs-li">Certified expertise in grading, excavation, and underground utility work</li>
+                        <li class="cs-li">Trusted by major municipalities and public agencies across the Bay Area</li>
+                        <li class="cs-li">Specialized structural solutions for slope stabilization, retaining walls, and foundations</li>
+                    </ul>
+                </div>
+                <a class="cs-button-solid" aria-label="learn more about our programs" href="">Read More</a>
+            </div>
+            <!-- Right Image Section -->
+            <div class="cs-image-group">
+                <!--Floating Box-->
+                <div class="cs-box">
+                    <span class="cs-number">12K+</span>
+                    <div class="cs-flex">
+                        <h3 class="cs-heading">Statistic you'd like to highlight</h3>
+                        <span class="cs-desc">short description of statistic</span>
+                    </div>
+                </div>
+                <!--Image-->
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/construction3.jpg">
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/construction3.jpg">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/construction3.jpg" alt="meeting" width="630" height="630" aria-hidden="true">
+                </picture>
+            </div>
+        </div>
     </section>
 
     <!-- ============================================ -->
     <!--                  Services                    -->
     <!-- ============================================ -->
 
-    <section id="services" class="services">
-        <!-- Get Icons From flaticon.com -->
-        <div class="card">
-            <picture>
-                <img
-                aria-hidden="true"
-                decoding="async"
-                src="/assets/svgs/service1.svg"
-                alt="appliance"
-                width="48"
-                height="48"/>
-            </picture>
-            <h2>Service 1</h2>
-            <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
-        </div>
-        <div class="card">
-            <picture>
-                <img
-                aria-hidden="true"
-                decoding="async"
-                src="/assets/svgs/service2.svg"
-                alt="appliance"
-                width="48"
-                height="48"/>
-            </picture>
-            <h2>Service 2</h2>
-            <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
-        </div>
-        <div class="card">
-            <picture>
-                <img
-                aria-hidden="true"
-                decoding="async"
-                src="/assets/svgs/service3.svg"
-                alt="appliance"
-                width="48"
-                height="48"/>
-            </picture>
-            <h2>Service 3</h2>
-            <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
+    <section id="services-1975">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Our Services</span>
+                <h2 class="cs-title">Comprehensive Engineering & Construction Solutions</h2>
+                <p class="cs-text">
+                     From excavation and grading to underground utilities and structural repairs, Redwood Engineering Construction delivers reliable, code-compliant work for residential, commercial, and public sector projects throughout the Bay Area.
+                </p>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <div class="cs-flex">
+                        <h3 class="cs-h3">Grading & Excavation</h3>
+                        <p class="cs-item-text">
+                             Expert site preparation services including earthmoving, slope grading, and compaction, performed with precision using heavy-duty equipment.
+                        </p>
+                    </div>
+                    <a href="" class="cs-link">
+                        Learn More
+                    </a>
+                    <picture class="cs-picture">
+                        <img loading="lazy" decoding="async"
+                        src="/assets/images/excavate.jpg" alt="icon"
+                        width="181" height="102">
+                    </picture>
+                </li>
+                <li class="cs-item">
+                    <div class="cs-flex">
+                        <h3 class="cs-h3">Underground Utilities</h3>
+                        <p class="cs-item-text">
+                            Installation and repair of water, sewer, storm drain, and electrical systems—efficiently executed to meet all local safety regulations.
+                        </p>
+                    </div>
+                    <a href="" class="cs-link">
+                        Learn More
+                    </a>
+                    <picture class="cs-picture">
+                        <img loading="lazy" decoding="async"
+                        src="/assets/images/storm-drain.jpg" alt="icon" width="181"
+                        height="102">
+                    </picture>
+                </li>
+                <li class="cs-item">
+                    <div class="cs-flex">
+                        <h3 class="cs-h3">Slope & Retaining Wall Repair</h3>
+                        <p class="cs-item-text">
+                            Structural stabilization services including landslide remediation, tieback anchors, and new retaining wall systems engineered for durability.
+                        </p>
+                    </div>
+                    <a href="" class="cs-link">
+                        Learn More
+                    </a>
+                    <picture class="cs-picture">
+                        <img loading="lazy" decoding="async"
+                        src="/assets/images/slope.jpg" alt="icon"
+                        width="181" height="102">
+                    </picture>
+                </li>
+                <li class="cs-item">
+                    <div class="cs-flex">
+                        <h3 class="cs-h3">Parks & More</h3>
+                        <p class="cs-item-text">
+                            Full park build-outs and streetscape enhancements including playgrounds, turf, drainage, and hardscaping—trusted by Bay Area municipalities.
+                        </p>
+                    </div>
+                    <a href="" class="cs-link">
+                        Learn More
+                    </a>
+                    <picture class="cs-picture">
+                        <img loading="lazy" decoding="async"
+                        src="/assets/images/playground.jpg" alt="icon" width="181"
+                        height="102">
+                    </picture>
+                </li>
+            </ul>
         </div>
     </section>
 
     <!-- ============================================ -->
-    <!--                 Side By Side                 -->
+    <!--                    Stats                     -->
     <!-- ============================================ -->
 
-    <section id="sbs">
+    <section id="stats-1659">
         <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-left">
-                <picture class="cs-picture cs-picture1">
-                    <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="cabinets" loading="lazy" width="400" height="563">
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <source media="(max-width: 600px)" srcset="/assets/images/construction-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/construction.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/construction.jpg" alt="house" loading="lazy" width="400" height="563">
-                </picture>
-            </div>
-            <!-- Right Content Section-->
-            <div class="cs-right">
-                <span class="cs-topper">About Us</span>
-                <h2 class="cs-title">About Company Title</h2>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <div class="cs-flex-group">
-                    <p class="cs-flex-p">
-                        In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet imperdiet for mind.
+            <picture class="cs-picture">
+                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/standing.jpg">
+                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/standing.jpg">
+                <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/standing.jpg" alt="volunteers" width="630" height="601" aria-hidden="true">
+            </picture>
+            <div class="cs-content">
+                <div class="cs-flex">
+                    <span class="cs-topper">By the Numbers</span>
+                    <h2 class="cs-title">Proven Results Across the Bay Area</h2>
+                    <p class="cs-text">
+                        Redwood Engineering Construction brings years of hands-on experience, trusted municipal partnerships, and a proven track record of quality craftsmanship to every project — big or small.
                     </p>
-                    <span class="cs-name">Justin Time</span>
-                    <span class="cs-job">CEO-Founder</span>
-                    <img 
-                    class="cs-quote-icon"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg"
-                    alt="gavel"
-                    width="136"
-                    height="77"/>
                 </div>
-                <a href="/about" class="cs-button-solid">More About Us</a>
+                <ul class="cs-stat-group">
+                    <li class="cs-stat">
+                        <span class="cs-number">-</span>
+                        <span class="cs-desc">Public and Private Projects Completed</span>
+                    </li>
+                    <li class="cs-stat">
+                        <span class="cs-number">-</span>
+                        <span class="cs-desc">Bay Area Municipal Clients</span>
+                    </li>
+                    <li class="cs-stat">
+                        <span class="cs-number">-</span>
+                        <span class="cs-desc">Satisfied Customers</span>
+                    </li>
+                    <li class="cs-stat">
+                        <span class="cs-number">2015</span>
+                        <span class="cs-desc">Proudly Serving Since</span>
+                    </li>
+                </ul>           
             </div>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!--            Extra Content To Rank             -->
-    <!-- ============================================ -->
-
-    <section id="sbs-r">
-        <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-left">
-                <picture class="cs-picture cs-picture1">
-                    <source media="(max-width: 600px)" srcset="/assets/images/construction-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/construction.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/construction.jpg" alt="house" loading="lazy" width="400" height="560">
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="cabinets" loading="lazy" width="400" height="560">
-                </picture>
-            </div>
-            <!-- Right Content Section-->
-            <div class="cs-right">
-                <span class="cs-topper">SEO Ranking</span>
-                <h2 class="cs-title">Talk about a main service keyword</h2>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <p class="cs-text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non tenetur, iure nihil ipsam qui atque commodi id voluptatem nesciunt, quis animi fuga cum doloribus! Eaque laboriosam, unde consectetur iure asperiores ullam. Consequuntur debitis a voluptatibus vitae optio autem explicabo quia neque est quas, in placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus modi laudantium voluptatibus rem libero error minus quia eligendi sapiente eos.
-                </p>
-                <a href="/blog" class="cs-button-solid">Read our Blog</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                   Gallery                    -->
-    <!-- ============================================ -->
-
-    <section id="gallery">
-        <div class="cs-container">
-            <span class="cs-topper">Our Portfolio</span>
-            <h2 class="cs-title">Et orci volutpat, back up generator installations</h2>
-            <div class="cs-image-group">
-                <!-- Row 1-->
-                <div class="cs-row cs-row-1">
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                    <picture class="cs-picture cs-picture1">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port1-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port1.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port1.jpg" alt="new hallway" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port4-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port4.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port4.jpg" alt="new home construction" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture3">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port7-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port7.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port7.jpg" alt="building a new wall" loading="lazy" width="400" height="560">
-                    </picture>
-                </div>
-                <!-- Row 2 -->
-                <div class="cs-row cs-row-2">
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                    <picture class="cs-picture cs-picture1">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port2-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port2.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port2.jpg" alt="new kitchen" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port5-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port5.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port5.jpg" alt="apartment addition" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture3">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port8-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port8.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port8.jpg" alt="kew kitchen cabinets" loading="lazy" width="400" height="560">
-                    </picture>
-                </div>
-                <!-- Row 3 -->
-                <div class="cs-row cs-row-3">
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                    <picture class="cs-picture cs-picture1">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port3-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port3.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port3.jpg" alt="new kitchen" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port6-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port6.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port6.jpg" alt="apartment addition" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture3">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port9-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port9.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port9.jpg" alt="kew kitchen cabinets" loading="lazy" width="400" height="560">
-                    </picture>
-
-                </div>
-            </div>
-            <a href="/projects" class="cs-button-solid">View Full Gallery</a>
         </div>
     </section>
 
@@ -315,74 +318,45 @@ eleventyNavigation:
     <!--                   Reviews                    -->
     <!-- ============================================ -->
 
-    <section id="reviews">
+    <section id="reviews-727">
         <div class="cs-container">
-            <span class="cs-topper">Our Reviews</span>
-            <h2 class="cs-title">Words From Our Customers</h2>
-            <p class="cs-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dolor volutpat porttitor sagittis nunc nisl. Sagittis sit pellentesque gravida viverra. Leo ut sed euismod tortor risus et. Ornare non neque, leo, ornare. Lorem ipsum dolor sit amet.
-            </p>
+            <div class="cs-content">
+                <span class="cs-topper">Testimonials</span>
+                <h2 class="cs-title">What Our Clients Say</h2>
+                <p class="cs-text">
+                    We take pride in delivering quality work and dependable service on every project. Here's what clients across the Bay Area have to say about partnering with Redwood Engineering Construction.
+                </p>
+            </div>
             <ul class="cs-card-group">
-                <!-- Review 1 -->
                 <li class="cs-item">
-                    <img
-                    class="cs-item-img"
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile5.png"
-                    alt="profile picture"
-                    width="80"
-                    height="80"/>
-                    <p class="cs-item-p">
-                        Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa urna, volutpat orci imperdiet eget eget.
+                    <img class="cs-icon" src="./assets/svgs/quote.svg" alt="quote icon" aria-hidden="true" width="40" height="38" loading="lazy" decoding="async">
+                    <h3 class="cs-h3">The staff was incredibly helpful</h3>
+                    <p class="cs-item-text">
+                        Sergio and Miguel went above and beyond in helping me and my mother and due to their superior service, I will definitely become a repeat customer and recommend Redwood Engineering Construction to all of my friends and family who need their services.
                     </p>
-                    <span class="cs-reviewer">
-                        Jon Doe
-                        <span class="cs-desc">Homeowner</span>
-                    </span>
-                    <img
-                    class="cs-item-stars"
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
-                    alt="stars"
-                    width="96"
-                    height="16"/>
+                    <span class="cs-name">Rose A.</span>
+                    <span class="cs-text">Redwood City, CA</span>
                 </li>
-                <!-- Review 2 -->
                 <li class="cs-item">
-                    <img
-                    class="cs-item-img"
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile-4.png"
-                    alt="profile picture"
-                    width="80"
-                    height="80"/>
-                    <p class="cs-item-p">
-                        Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa urna, volutpat orci imperdiet eget eget.
+                    <img class="cs-icon" src="./assets/svgs/quote.svg" alt="quote icon" aria-hidden="true" width="40" height="38" loading="lazy" decoding="async">
+                    <h3 class="cs-h3">Expect Ben to get the job done right</h3>
+                    <p class="cs-item-text">
+                        I have hired several bobcat excavation operators over the years and have had consistently good service from Redwood hence my comming back to him time and again. Over the different jobs he has done for me he has been able to add experience and expertise to my plans giving me options I had never considered.
                     </p>
-                    <span class="cs-reviewer">
-                        Jane Doe
-                        <span class="cs-desc">Homeowner</span>
-                    </span>
-                    <img
-                    class="cs-item-stars"
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
-                    alt="stars"
-                    width="96"
-                    height="16"/>
+                    <span class="cs-name">Josh W</span>
+                    <span class="cs-text">San Ramon, CA</span>
                 </li>
             </ul>
-            <a aria-label="read more reviews" href="/reviews" class="cs-button-solid">Our Reviews</a>
         </div>
     </section>
+                                
+                                
+                                
+                                
+                                
+                                
+
+
 
     {% include 'components/cta.html' %}
 {% endblock %}
