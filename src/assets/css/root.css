@@ -282,7 +282,7 @@
   #cs-navigation {
     z-index: 10000;
     position: fixed;
-    background-color: #fff;
+    background-color: #ffffff;
     width: 100%;
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
@@ -303,7 +303,7 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto 0 0;
-    height: 100%;
+    height: 3rem;
     max-width: 9.125rem;
     width: 40%;
     /* prevents padding from affecting height and width */
@@ -1093,6 +1093,7 @@
   #cs-footer-1862 .cs-logo img {
     width: 100%;
     height: auto;
+    padding-left: 100px;
   }
   #cs-footer-1862 .cs-social {
     margin: 0;
