@@ -1,0 +1,87 @@
+---
+title: 'Cityscape Projects | Redwood Engineering Construction'
+description: 'Revitalizing California cityscapes with expert infrastructure upgrades, utility installations, and streetscape enhancements.'
+permalink: 'cityscape-projects/'
+eleventyNavigation:
+  key: Cityscape Projects
+  order: 4500
+  parent: Services
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+<link rel="stylesheet" href="/assets/css/interior.css">
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-1402">
+    <div class="cs-container">
+        <span class="cs-int-title">Cityscape Projects</span>
+        <div class="cs-breadcrumbs">
+            <a href="/" class="cs-link">Home</a>
+            <a href="" class="cs-link cs-active">Cityscape Projects</a>
+        </div>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="../assets/images/webp/services/cityscape-banner-m.webp">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="../assets/images/webp/services/cityscape-banner-d.webp">
+        <img decoding="async" src="../assets/images/webp/services/cityscape-banner-d.webp" alt="cityscape construction" width="1280" height="568" aria-hidden="true">
+    </picture>
+</div>
+
+<!-- ============================================ -->
+<!--                 Content Page                 -->
+<!-- ============================================ -->
+
+<section id="content-page-1402">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <div class="cs-flex">
+                <picture class="cs-background">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="../assets/images/webp/services/cityscape-d.webp">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="../assets/images/webp/services/cityscape-d.webp">
+                    <img loading="lazy" decoding="async" src="../assets/images/webp/services/cityscape-d.webp" alt="urban construction" width="542" height="728">
+                </picture>
+            </div>
+        </div>
+
+        <!-- content -->
+        <div class="cs-content">
+            <h1 class="cs-title">Urban Infrastructure & <span class="cs-color">Cityscape Enhancements</span></h1>
+
+            <p>
+                Redwood Engineering Construction is experienced in executing complex urban infrastructure projects across the San Francisco Bay Area. From modernizing streetscapes to installing underground utilities, we help cities create safe, accessible, and aesthetically pleasing environments that benefit the public.
+            </p>
+
+            <h2>Public Works & Infrastructure</h2>
+            <p>
+                Our team collaborates with city agencies and private developers on a wide range of municipal improvements. We handle demolition, excavation, grading, concrete flatwork, utility trenching, and streetscape design with precision and professionalism.
+            </p>
+
+            <h2>Streetscapes & Accessibility</h2>
+            <p>
+                Redwood Engineering Construction supports city improvement goals by building ADA-compliant sidewalks, pedestrian walkways, curb ramps, retaining walls, and street lighting infrastructure. Our cityscape upgrades promote public safety and mobility in both residential and commercial areas.
+            </p>
+
+            <p>
+                Trusted by municipalities across the Bay Area, we deliver high-quality results that meet public safety standards and design intent. Whether revitalizing a city corridor or installing new infrastructure, Redwood Engineering is the partner cities rely on.
+            </p>
+        </div>
+    </div>
+    <div class="cs-bubbles" aria-hidden="true"></div>
+</section>
+
+{% include 'components/cta.html' %}
+
+{% endblock %}

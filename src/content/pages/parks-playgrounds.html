@@ -1,0 +1,93 @@
+---
+title: 'Parks & Playgrounds | Redwood Engineering Construction'
+description: 'Specializing in the construction and renovation of public parks, community play areas, and recreational spaces across the Bay Area.'
+permalink: 'parks-playgrounds/'
+eleventyNavigation:
+  key: Parks & Playgrounds
+  order: 4200
+  parent: Services
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+<link rel="stylesheet" href="/assets/css/interior.css">
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-1402">
+    <div class="cs-container">
+        <span class="cs-int-title">Parks & Playgrounds</span>
+        <div class="cs-breadcrumbs">
+            <a href="/" class="cs-link">Home</a>
+            <a href="" class="cs-link cs-active">Parks & Playgrounds</a>
+        </div>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)"
+            srcset="../assets/images/webp/services/park-banner-m2.webp">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)"
+            srcset="">
+        <img decoding="async" src="../assets/images/webp/services/park-banner2.webp"
+            alt="modern playground" width="1280" height="568" aria-hidden="true">
+    </picture>
+</div>
+
+
+<!-- ============================================ -->
+<!--                 Content Page                 -->
+<!-- ============================================ -->
+
+<section id="content-page-1402">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <div class="cs-flex">
+                <picture class="cs-background">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="../assets/images/webp/services/playground-m.webp">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="../assets/images/webp/services/playground-d.webp">
+                    <img loading="lazy" decoding="async" src="../assets/images/webp/services/playground-d.webp" alt="playground" width="542"
+                        height="728">
+                </picture>
+            </div>
+        </div>
+        <!-- content -->
+        <div class="cs-content">
+            <h1 class="cs-title">Parks & <span class="cs-color">Playground Construction</span></h1>
+
+            <p>
+                Redwood Engineering Construction is a full-service general engineering and construction contractor proudly serving the San Francisco Bay Area. With a reputation for completing projects on time, on budget, and to the highest standards, we bring expert craftsmanship to every park and playground build.
+            </p>
+
+            <h2>Complete Park Build-Outs</h2>
+            <p>
+                We specialize in the full build-out of city parks across California. Our services include excavation and grading, drainage installation, landscaping and irrigation systems, turf installation, and playground equipment setup — all performed in compliance with state and local safety regulations.
+            </p>
+
+            <h2>Trusted by Municipalities</h2>
+            <p>
+                Our work is trusted by cities and agencies throughout the region. Notable clients include the California Department of Transportation, City of Berkeley, San Carlos Public Works Department, City of Brisbane, City of Sunnyvale, City of Santa Clara, and the City of Pleasant Hill.
+            </p>
+
+            <p>
+                Licensed and insured, Redwood Engineering Construction handles both public and private projects with professionalism and precision. From neighborhood playgrounds to large-scale parks, we deliver safe, durable environments built for community enjoyment.
+            </p>
+        </div>
+    </div>
+    <div class="cs-bubbles" aria-hidden="true"></div>
+</section>
+
+
+
+{% include 'components/cta.html' %}
+
+{% endblock %}
