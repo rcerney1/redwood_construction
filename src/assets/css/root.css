@@ -1078,14 +1078,16 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
     /* 32px - 48px */
     gap: clamp(2rem, 4vw, 3rem);
   }
   #cs-footer-1862 .cs-logo {
-    width: 100%;
-    max-width: 19.8125rem;
-    height: auto;
+    width: auto;
+    max-width: 200px;
+    margin: 0 auto;
+    display: block;
   }
   #cs-footer-1862 .cs-logo img {
     width: 100%;
