@@ -264,6 +264,7 @@
         padding-right: clamp(1rem, 3vw, 6.25rem);
         position: relative;
         background-color: #fef5f4;
+        
 
         .cs-topper {
           padding-bottom: 10px;
@@ -472,13 +473,14 @@
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #services-1732 {
-            .cs-title, .cs-text {
-                color: var(--bodyTextColorWhite);
-            }
+          background-color: var(--medium);
 
-            .cs-text {
-                opacity: .8;
-            }
+          .cs-title, .cs-text {
+              color: var(--bodyTextColorWhite);
+          }       
+          .cs-text {
+              opacity: .8;
+          }
         }
     }
 }
@@ -787,7 +789,9 @@
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
+      
         #reviews-727 {
+          background-color: var(--medium);
             .cs-topper,
             .cs-title,
             .cs-text,
@@ -802,8 +806,9 @@
             }
 
             .cs-item {
-                background-color: var(--medium);
+                background-color: var(--dark);
             }
+             
         }
     }
 }

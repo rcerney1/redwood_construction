@@ -431,6 +431,9 @@
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
+  body.dark-mode #services-1732 {
+    background-color: var(--medium);
+  }
   body.dark-mode #services-1732 .cs-title,
   body.dark-mode #services-1732 .cs-text {
     color: var(--bodyTextColorWhite);
@@ -720,6 +723,9 @@
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
+  body.dark-mode #reviews-727 {
+    background-color: var(--medium);
+  }
   body.dark-mode #reviews-727 .cs-topper,
   body.dark-mode #reviews-727 .cs-title,
   body.dark-mode #reviews-727 .cs-text,
@@ -732,6 +738,6 @@
     opacity: 0.8;
   }
   body.dark-mode #reviews-727 .cs-item {
-    background-color: var(--medium);
+    background-color: var(--dark);
   }
 }
