@@ -16,13 +16,16 @@
                     <span class="cs-header">Contact Info</span>
                 </li>
                 <li class="cs-li">
-                    <a href="" class="cs-link" target="_blank" rel="noopener">
-                        416 D Street, Redwood City, CA 95928
+                    <a href="{{client.address.mapLink}}" class="cs-link" target="_blank" rel="noopener">
+                        {{client.address.lineOne}}
+                        {{client.address.city}},
+                        {{client.address.state}}
+                        {{client.address.zip}}
                     </a>
                 </li>
                 <li class="cs-li">
-                    <a href="mailto:info@example.com" class="cs-link">
-                        ben@redwoodengineeringcon.com
+                    <a href="mailto:{{client.email}}" class="cs-link">
+                        {{client.email}}
                     </a>
                 </li>
             </ul>
