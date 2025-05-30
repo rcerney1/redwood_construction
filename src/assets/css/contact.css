@@ -266,3 +266,8 @@
     opacity: 0.5;
   }
 }
+@media only screen and (max-width: 767px) {
+  #cs-contact .cs-bg-picture {
+    display: none;
+  }
+}
