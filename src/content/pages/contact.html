@@ -21,7 +21,7 @@ hideOnDesktop: true
 <!--                    LANDING                   -->
 <!-- ============================================ -->
 
-<section id="int-hero">
+<!-- <section id="int-hero">
     <h1 id="home-h">Contact Us</h1>
     <picture>
         <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
@@ -29,7 +29,9 @@ hideOnDesktop: true
         <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="kitchen cabinets"
             loading="eager" width="2500" height="1667">
     </picture>
-</section>
+</section> -->
+
+
 
 <!-- ============================================ -->
 <!--                Contact Form                  -->
@@ -37,9 +39,9 @@ hideOnDesktop: true
 
 <section id="cs-contact">
     <div class="cs-container">
-
         <!-- ✅ UPDATED FORM: added netlify attributes and hidden fields -->
-        <form id="cs-form" name="Contact Form" method="POST" netlify netlify-honeypot="bot-field">
+        <form id="cs-form" name="Contact Form" method="POST" netlify netlify-honeypot="bot-field" action="/thank-you">
+
             <!-- ✅ Hidden field to identify the form name -->
             <input type="hidden" name="form-name" value="Contact Form" />
 
@@ -54,8 +56,7 @@ hideOnDesktop: true
                 <span class="cs-topper">Contact</span>
                 <h2 class="cs-title">Get in Touch</h2>
                 <p class="cs-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ridiculus elementum ullamcorper ipsum
-                    porttitor aliquam. Id magna urna ultrices odio pulvinar. Sed ut.
+                    Contact us for a quote. Redwood Engineering Construction delivers quality work on time and on budget, with a focus on safety, teamwork, and getting the job done right.
                 </p>
             </div>
 
@@ -93,12 +94,10 @@ hideOnDesktop: true
             <!--Address-->
             <span class="cs-header">Address</span>
             <a class="cs-link" href="{{client.address.mapLink}}">
-                {{client.address.lineOne}},
-                <br />
-                {{client.address.lineTwo}},
-                <br />
+                {{client.address.lineOne}} <br/>
+                
                 <span class="cs-block">
-                    {{client.address.city}}
+                    {{client.address.city}},
                     {{client.address.state}}
                     {{client.address.zip}}
                 </span>
@@ -106,12 +105,17 @@ hideOnDesktop: true
 
             <!-- Background Image-->
             <picture class="cs-bg-picture">
-                <source media="(min-width: 601px)" srcset="/assets/images/skyscraper.jpg">
-                <img aria-hidden="true" decoding="async" src="/assets/images/skyscraper.jpg" alt="building"
+                <source media="(min-width: 601px)" srcset="/assets/images/construction-crane.webp">
+                <img aria-hidden="true" decoding="async" src="/assets/images/construction-crane.webp" alt="building"
                     loading="lazy" width="2500" height="1667">
             </picture>
         </div>
     </div>
 </section>
 
+
+
+
 {% endblock %}
+
+

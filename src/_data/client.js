@@ -1,16 +1,16 @@
 module.exports = {
-    "name": "Code Stitch Web Designs",
-    "email": "help@codestitch.app",
-    "phoneForTel": "555-779-4407",
-    "phoneFormatted": "(555) 779-4407",
+    "name": "Redwood Engineering Construction",
+    "email": "Ben@redwoodengineeringcon.com",
+    "phoneForTel": "415-496-5197",
+    "phoneFormatted": "(415) 496-5197",
     "address": {
-        "lineOne": "First Address Line",
-        "lineTwo": "Second Address Line",
-        "city": "Denver",
-        "state": "CO",
+        "lineOne": "1485 Bayshore Blvd.",
+        "lineTwo": "",
+        "city": "San Francisco",
+        "state": "CA",
         "zip": "80206",
         "country": "US",
-        "mapLink": "https://maps.app.goo.gl/TEdS5KoLC9ZcULuQ6"
+        "mapLink": "https://maps.app.goo.gl/KzMWXNifBcvSktBaA"
     },
     "socials": {
         "facebook": "https://www.facebook.com/",
