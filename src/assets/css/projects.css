@@ -194,3 +194,6 @@
     color: var(--primary);
   }
 }
+#int-hero #home-h {
+  white-space: nowrap;
+}
