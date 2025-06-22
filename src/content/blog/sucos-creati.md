@@ -8,6 +8,8 @@ tags:
     - post
 image: /assets/images/blog/landing.jpg
 imageAlt: Kitchen
+eleventyExcludeFromCollections: true
+sitemap: false
 ---
 
 ## Hospes meus
