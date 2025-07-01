@@ -17,7 +17,8 @@ order: 100
 <link rel="stylesheet" href="/assets/css/critical.css" />
 <link rel="preload" as="image" href="/assets/images/webp/playground-d.webp"
     imagesrcset="/assets/images/webp/playground-d.webp" fetchpriority="high" type="image/webp">
-<link rel="preload" as="image" href="/assets/images/webp/playground-m.webp" type="image/webp" media="(max-width: 600px)">
+<link rel="preload" as="image" href="/assets/images/webp/playground-m.webp" type="image/webp"
+    media="(max-width: 600px)">
 
 <style>
     .cs-item {
@@ -136,7 +137,7 @@ Doing this will complete the overlapping "breaking the container" look.
             <a href="/contact" class="cs-button-solid">Get A Quote</a>
         </div>
         <ul class="cs-card-group">
-            <li class="cs-item">
+            <!-- <li class="cs-item">
                 <a href="/parks-playgrounds" class="cs-link">
                     <h3 class="cs-h3">Parks + Playgrounds</h3>
                     <p class="cs-item-text">
@@ -151,7 +152,12 @@ Doing this will complete the overlapping "breaking the container" look.
                         height="374" style="aspect-ratio: 413 / 374; width: 100%; height: auto;" fetchpriority="high"
                         loading="eager">
                 </picture>
+            </li> -->
+            <li style="position: relative; overflow: hidden;">
+                <img src="/assets/images/webp/playground-m.webp" alt="playground" width="413" height="374"
+                    style="width: 100%; height: auto;" loading="eager" fetchpriority="high">
             </li>
+
             <li class="cs-item">
                 <a href="/backup-generators" class="cs-link">
                     <h3 class="cs-h3">Backup Generators</h3>
