@@ -64,7 +64,8 @@
     padding: 0 1.5rem;
     overflow: hidden;
     border-radius: 0.25rem;
-    background-color: var(--primary);
+    /* background-color: var(--primary); */
+    background-color: blue;
     display: inline-block;
     position: relative;
     z-index: 1;
