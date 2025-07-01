@@ -1,42 +1,44 @@
 ---
 title: 'Redwood Engineering Construction | Redwood City, CA'
-description: 'Trusted Bay Area engineering and construction contractor specializing in excavation, grading, drainage, parks, and infrastructure projects for public and private clients.'
+description: 'Trusted Bay Area engineering and construction contractor specializing in excavation, grading, drainage,
+parks, and infrastructure projects for public and private clients.'
 preloadImg: '/assets/images/webp/homepage.webp'
 permalink: '/'
 tags: 'sitemap'
 eleventyNavigation:
-  key: Home
-  order: 100
+key: Home
+order: 100
 ---
 
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="/assets/css/local.css"/>
-    <link rel="stylesheet" href="/assets/css/critical.css"/>
-    <link rel="preload" as="image" href="/assets/images/webp/playground-m.webp" imagesrcset="/assets/images/webp/playground-m.webp" fetchpriority="high" type="image/webp">
+<link rel="stylesheet" href="/assets/css/local.css" />
+<link rel="stylesheet" href="/assets/css/critical.css" />
+<link rel="preload" as="image" href="/assets/images/webp/playground-m.webp"
+    imagesrcset="/assets/images/webp/playground-m.webp" fetchpriority="high" type="image/webp">
 
 
-    <!-- Script for Netlify Identity -->
-    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <script defer>
-        if (window.netlifyIdentity) {
-            window
-                .netlifyIdentity
-                .on('init', (user) => {
-                    if (!user) {
-                        window
-                            .netlifyIdentity
-                            .on('login', () => {
-                                document.location.href = '/admin/';
-                            });
-                    }
-                });
-        }
-    </script>
+<!-- Script for Netlify Identity -->
+<script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script defer>
+    if (window.netlifyIdentity) {
+        window
+            .netlifyIdentity
+            .on('init', (user) => {
+                if (!user) {
+                    window
+                        .netlifyIdentity
+                        .on('login', () => {
+                            document.location.href = '/admin/';
+                        });
+                }
+            });
+    }
+</script>
 
-    <!-- JSON Schema Markup -->
-    <script type="application/ld+json">
+<!-- JSON Schema Markup -->
+<script type="application/ld+json">
         {
             "@context": "http://schema.org",
             "@type": "LocalBusiness",
@@ -86,284 +88,315 @@ ON TABLET (768px): Reset to padding-top: (230/16rem); using LESS, padding-top: c
 Doing this will complete the overlapping "breaking the container" look.
 -->
 
-    <!-- ============================================ -->
-    <!--                    Hero                      -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
 
-    <section id="hero-1249">
-        <div class="cs-container">
-            <div class="cs-content">
-                <h1 class="cs-title">Redwood Engineering Construction</h1>
-                <p class="cs-text">
-                    Delivering expert engineering and construction solutions across the Bay Area — on time, on budget, with unmatched craftsmanship.
-                </p>
-                <a href="/contact" class="cs-button-solid">Get A Quote</a>
-            </div>
-            <ul class="cs-card-group">
-                <li class="cs-item">
-                    <a href="/parks-playgrounds" class="cs-link">
-                        <h3 class="cs-h3">Parks + Playgrounds</h3>
-                        <p class="cs-item-text">
-                            Park and playground construction including turf, irrigation, drainage, and safety-compliant equipment.
-                        </p>
-                    </a>
-                    <picture class="cs-item-background">
-                        <source media="(max-width: 600px)" srcset="assets/images/webp/playground-m.webp">
-                        <source media="(min-width: 601px)" srcset="assets/images/webp/playground-d.webp">
-                        <img decoding="async" src="assets/images/webp/playground-d.webp" alt="playground" width="413" height="374" aria-hidden="true" fetchpriority="high" loading="eager">
-                    </picture>
-                </li>
-                <li class="cs-item">
-                    <a href="/backup-generators" class="cs-link">
-                        <h3 class="cs-h3">Backup Generators</h3>
-                        <p class="cs-item-text">
-                            Backup generator installation for homes, cities, and commercial buildings across the Bay Area.
-                        </p>
-                    </a>
-                    <picture class="cs-item-background">
-                        <source media="(max-width: 600px)" srcset="assets/images/webp/generator-m.webp">
-                        <source media="(min-width: 601px)" srcset="assets/images/webp/generator.webp">
-                        <img decoding="async" src="assets/images/webp/generator.webp" alt="generator" width="413" height="374" aria-hidden="true">
-                    </picture>
-                </li>
-                <li class="cs-item">
-                    <a href="/grading-excavation" class="cs-link">
-                        <h3 class="cs-h3">Excavation + Grading</h3>
-                        <p class="cs-item-text">
-                            Grading and excavation services for public and private projects using advanced equipment and operators. 
-                        </p>
-                    </a>
-                    <picture class="cs-item-background">
-                        <source media="(max-width: 600px)" srcset="assets/images/webp/excavation-m.webp">
-                        <source media="(min-width: 601px)" srcset="assets/images/webp/excavation.webp">
-                        <img decoding="async" src="assets/images/webp/excavation.webp" alt="construction" width="413" height="374" aria-hidden="true">
-                    </picture>
-                </li>
-                <li class="cs-item">
-                    <a href="/cityscape-projects" class="cs-link">
-                        <h3 class="cs-h3">Cityscape Projects</h3>
-                        <p class="cs-item-text">
-                            Streetscape and sidewalk construction and public upgrades for city infrastructure projects. 
-                        </p>
-                    </a>
-                    <picture class="cs-item-background">
-                        <source media="(max-width: 600px)" srcset="assets/images/webp/cityscape-m.webp">
-                        <source media="(min-width: 601px)" srcset="assets/images/webp/cityscape.webp">
-                        <img decoding="async" src="assets/images/webp/cityscape.webp" alt="construction" width="413" height="374" aria-hidden="true">
-                    </picture>
-                </li>
-            </ul>
+<section id="hero-1249">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h1 class="cs-title">Redwood Engineering Construction</h1>
+            <p class="cs-text">
+                Delivering expert engineering and construction solutions across the Bay Area — on time, on budget, with
+                unmatched craftsmanship.
+            </p>
+            <a href="/contact" class="cs-button-solid">Get A Quote</a>
         </div>
-
-        <!-- Background Image, there's a background image in the CSS for the parallax effect you'll need to change as well if you swap out our images -->
-        <picture class="cs-background">
-            <source media="(max-width: 600px)" srcset="/assets/images/webp/homepage-m.webp">
-            <source media="(min-width: 601px)" srcset="/assets/images/webp/homepage.webp">
-            <img decoding="async" src="/assets/images/webp/homepage.webp" alt="construction" width="2250" height="1500" aria-hidden="true">
-        </picture>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                About Us Section              -->
-    <!-- ============================================ -->
-
-    <section id="sbs-2291">
-        <div class="cs-container">
-            <!-- Left Content Section-->
-            <div class="cs-content">
-                <span class="cs-topper">About Us</span>
-                <h2 class="cs-title">Engineering Reliability. Building the Bay Area.</h2>
-                <p class="cs-text">
-                    Redwood Engineering Construction is a licensed and insured contractor specializing in excavation, grading, underground utilities, drainage, parks, and structural repair throughout the San Francisco Bay Area. Since 2015, we’ve built a reputation for completing both public and private projects on time, on budget, and to the highest standards of quality and safety.
-                </p>
-                <div class="cs-features">
-                    <h3 class="cs-h3">Key Features:</h3>
-                    <ul class="cs-ul">
-                        <li class="cs-li">Certified expertise in grading, excavation, and underground utility work</li>
-                        <li class="cs-li">Trusted by major municipalities and public agencies across the Bay Area</li>
-                        <li class="cs-li">Specialized structural solutions for slope stabilization, retaining walls, and foundations</li>
-                    </ul>
-                </div>
-                <a class="cs-button-solid" aria-label="learn more about our programs" href="/about">Read More</a>
-            </div>
-            <!-- Right Image Section -->
-            <div class="cs-image-group">
-                <!--Floating Box-->
-                <!-- ADD STATISTIC HERE -->
-                <div class="cs-box">
-                    <span class="cs-number"></span>
-                    <div class="cs-flex">
-                        <h3 class="cs-heading"></h3>
-                        <span class="cs-desc"></span>
-                    </div>
-                </div>
-                <!--Image-->
-                <picture class="cs-picture">
-                    <source media="(max-width: 600px)" srcset="/assets/images/webp/people2-m.webp">
-                    <source media="(min-width: 601px)" srcset="/assets/images/webp/people2.webp">
-                    <img loading="lazy" decoding="async" src="/assets/images/webp/people2.webp" alt="meeting" width="630" height="630" aria-hidden="true">
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <a href="/parks-playgrounds" class="cs-link">
+                    <h3 class="cs-h3">Parks + Playgrounds</h3>
+                    <p class="cs-item-text">
+                        Park and playground construction including turf, irrigation, drainage, and safety-compliant
+                        equipment.
+                    </p>
+                </a>
+                <picture class="cs-item-background">
+                    <source media="(max-width: 600px)" srcset="assets/images/webp/playground-m.webp">
+                    <source media="(min-width: 601px)" srcset="assets/images/webp/playground-d.webp">
+                    <img src="assets/images/webp/playground-d.webp" alt="playground" width="413" height="374"
+                        style="aspect-ratio: 413 / 374; width: 100%; height: auto;" fetchpriority="high" loading="eager"
+                        decoding="async" />
                 </picture>
+            </li>
+            <li class="cs-item">
+                <a href="/backup-generators" class="cs-link">
+                    <h3 class="cs-h3">Backup Generators</h3>
+                    <p class="cs-item-text">
+                        Backup generator installation for homes, cities, and commercial buildings across the Bay Area.
+                    </p>
+                </a>
+                <picture class="cs-item-background">
+                    <source media="(max-width: 600px)" srcset="assets/images/webp/generator-m.webp">
+                    <source media="(min-width: 601px)" srcset="assets/images/webp/generator.webp">
+                    <img decoding="async" src="assets/images/webp/generator.webp" alt="generator" width="413"
+                        height="374" aria-hidden="true">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <a href="/grading-excavation" class="cs-link">
+                    <h3 class="cs-h3">Excavation + Grading</h3>
+                    <p class="cs-item-text">
+                        Grading and excavation services for public and private projects using advanced equipment and
+                        operators.
+                    </p>
+                </a>
+                <picture class="cs-item-background">
+                    <source media="(max-width: 600px)" srcset="assets/images/webp/excavation-m.webp">
+                    <source media="(min-width: 601px)" srcset="assets/images/webp/excavation.webp">
+                    <img decoding="async" src="assets/images/webp/excavation.webp" alt="construction" width="413"
+                        height="374" aria-hidden="true">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <a href="/cityscape-projects" class="cs-link">
+                    <h3 class="cs-h3">Cityscape Projects</h3>
+                    <p class="cs-item-text">
+                        Streetscape and sidewalk construction and public upgrades for city infrastructure projects.
+                    </p>
+                </a>
+                <picture class="cs-item-background">
+                    <source media="(max-width: 600px)" srcset="assets/images/webp/cityscape-m.webp">
+                    <source media="(min-width: 601px)" srcset="assets/images/webp/cityscape.webp">
+                    <img decoding="async" src="assets/images/webp/cityscape.webp" alt="construction" width="413"
+                        height="374" aria-hidden="true">
+                </picture>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Background Image, there's a background image in the CSS for the parallax effect you'll need to change as well if you swap out our images -->
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="/assets/images/webp/homepage-m.webp">
+        <source media="(min-width: 601px)" srcset="/assets/images/webp/homepage.webp">
+        <img decoding="async" src="/assets/images/webp/homepage.webp" alt="construction" width="2250" height="1500"
+            aria-hidden="true">
+    </picture>
+</section>
+
+<!-- ============================================ -->
+<!--                About Us Section              -->
+<!-- ============================================ -->
+
+<section id="sbs-2291">
+    <div class="cs-container">
+        <!-- Left Content Section-->
+        <div class="cs-content">
+            <span class="cs-topper">About Us</span>
+            <h2 class="cs-title">Engineering Reliability. Building the Bay Area.</h2>
+            <p class="cs-text">
+                Redwood Engineering Construction is a licensed and insured contractor specializing in excavation,
+                grading, underground utilities, drainage, parks, and structural repair throughout the San Francisco Bay
+                Area. Since 2015, we’ve built a reputation for completing both public and private projects on time, on
+                budget, and to the highest standards of quality and safety.
+            </p>
+            <div class="cs-features">
+                <h3 class="cs-h3">Key Features:</h3>
+                <ul class="cs-ul">
+                    <li class="cs-li">Certified expertise in grading, excavation, and underground utility work</li>
+                    <li class="cs-li">Trusted by major municipalities and public agencies across the Bay Area</li>
+                    <li class="cs-li">Specialized structural solutions for slope stabilization, retaining walls, and
+                        foundations</li>
+                </ul>
             </div>
+            <a class="cs-button-solid" aria-label="learn more about our programs" href="/about">Read More</a>
         </div>
-    </section>
-
-        
-    
-
-    <!-- ============================================ -->
-    <!--                    Services                  -->
-    <!-- ============================================ -->
-
-    <section id="services-1732">
-        <div class="cs-container">
-            <div class="cs-content">
-                <span class="cs-topper">Our Services</span>
-                <h2 class="cs-title">Comprehensive Engineering & Construction Solutions</h2>
-                <p class="cs-text">
-                    From excavation and grading to underground utilities and structural repairs, Redwood Engineering Construction delivers reliable, code-compliant work for residential, commercial, and public sector projects throughout the Bay Area.
-                </p>
-            </div>
-
-            <ul class="cs-card-group">
-                <li class="cs-item">
-                    <a href="/grading-excavation" class="cs-link">
-                        <h3 class="cs-h3">Grading & Excavation</h3>
-                    </a>
-                    <picture class="cs-picture">
-                        <source media="(max-width: 600px)" srcset="/assets/images/webp/excavate-m.webp">
-                        <source media="(min-width: 601px)" srcset="/assets/images/webp/excavate.webp">
-                        <img src="/assets/images/webp/excavate.webp" alt="grading and excavation" width="384" height="480" loading="lazy" decoding="async">
-                    </picture>
-                </li>
-                <li class="cs-item">
-                    <a href="/cityscape-projects" class="cs-link">
-                        <h3 class="cs-h3">Cityscape Projects</h3>
-                    </a>
-                    <picture class="cs-picture">
-                        <source media="(max-width: 600px)" srcset="/assets/images/webp/storm-drain-m.webp">
-                        <source media="(min-width: 601px)" srcset="/assets/images/webp/storm-drain.webp">
-                        <img src="/assets/images/webp/storm-drain.webp" alt="drainage systems" width="384" height="480" loading="lazy" decoding="async">
-                    </picture>
-                </li>
-                <li class="cs-item">
-                    <a href="/landslide-repairs" class="cs-link">
-                        <h3 class="cs-h3">Slide Repair</h3>
-                    </a>
-                    <picture class="cs-picture">
-                        <source media="(max-width: 600px)" srcset="/assets/images/webp/slope-m.webp">
-                        <source media="(min-width: 601px)" srcset="/assets/images/webp/slope.webp">
-                        <img src="/assets/images/webp/slope.webp" alt="retaining wall" width="384" height="480" loading="lazy" decoding="async">
-                    </picture>
-
-                </li>
-                <li class="cs-item">
-                    <a href="/backup-generators" class="cs-link">
-                        <h3 class="cs-h3">Backup Generators</h3>
-                    </a>
-                    <picture class="cs-picture">
-                        <source media="(max-width: 600px)" srcset="/assets/images/webp/generator-m.webp">
-                        <source media="(min-width: 601px)" srcset="/assets/images/webp/generator.webp">
-                        <img src="/assets/images/webp/generator.webp" alt="backup generator installation" width="384" height="480" loading="lazy" decoding="async">
-                    </picture>
-                </li>
-                <li class="cs-item">
-                    <a href="/parks-playgrounds" class="cs-link">
-                        <h3 class="cs-h3">Park & Playground Projects</h3>
-                    </a>
-                    <picture class="cs-picture">
-                        <img src="/assets/images/webp/playground-d.webp" alt="city park project" width="384" height="480" loading="lazy" decoding="async">
-                    </picture>
-                </li>
-            </ul>
-
-        </div>
-    </section>
-                                
-
-    <!-- ============================================ -->
-    <!--                    Stats                     -->
-    <!-- ============================================ -->
-
-    <section id="stats-1659">
-        <div class="cs-container">
-            <picture class="cs-picture">
-                <source media="(max-width: 600px)" srcset="/assets/images/webp/people-m.webp">
-                <source media="(min-width: 601px)" srcset="/assets/images/webp/people.webp">
-                <img loading="lazy" decoding="async" src="/assets/images/webp/people.webp" alt="volunteers" width="630" height="601" aria-hidden="true">
-            </picture>
-            <div class="cs-content">
+        <!-- Right Image Section -->
+        <div class="cs-image-group">
+            <!--Floating Box-->
+            <!-- ADD STATISTIC HERE -->
+            <div class="cs-box">
+                <span class="cs-number"></span>
                 <div class="cs-flex">
-                    <span class="cs-topper">By the Numbers</span>
-                    <h2 class="cs-title">Proven Results Across the Bay Area</h2>
-                    <p class="cs-text">
-                        Redwood Engineering Construction brings years of hands-on experience, trusted municipal partnerships, and a proven track record of quality craftsmanship to every project — big or small.
-                    </p>
+                    <h3 class="cs-heading"></h3>
+                    <span class="cs-desc"></span>
                 </div>
-                <ul class="cs-stat-group">
-                    <li class="cs-stat">
-                        <span class="cs-number">-</span>
-                        <span class="cs-desc">Public and Private Projects Completed</span>
-                    </li>
-                    <li class="cs-stat">
-                        <span class="cs-number">-</span>
-                        <span class="cs-desc">Bay Area Municipal Clients</span>
-                    </li>
-                    <li class="cs-stat">
-                        <span class="cs-number">-</span>
-                        <span class="cs-desc">Satisfied Customers</span>
-                    </li>
-                    <li class="cs-stat">
-                        <span class="cs-number">2015</span>
-                        <span class="cs-desc">Proudly Serving Since</span>
-                    </li>
-                </ul>           
             </div>
+            <!--Image-->
+            <picture class="cs-picture">
+                <source media="(max-width: 600px)" srcset="/assets/images/webp/people2-m.webp">
+                <source media="(min-width: 601px)" srcset="/assets/images/webp/people2.webp">
+                <img loading="lazy" decoding="async" src="/assets/images/webp/people2.webp" alt="meeting" width="630"
+                    height="630" aria-hidden="true">
+            </picture>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- ============================================ -->
-    <!--                   Reviews                    -->
-    <!-- ============================================ -->
 
-    <section id="reviews-727">
-        <div class="cs-container">
-            <div class="cs-content">
-                <span class="cs-topper">Testimonials</span>
-                <h2 class="cs-title">What Our Clients Say</h2>
+
+
+<!-- ============================================ -->
+<!--                    Services                  -->
+<!-- ============================================ -->
+
+<section id="services-1732">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Our Services</span>
+            <h2 class="cs-title">Comprehensive Engineering & Construction Solutions</h2>
+            <p class="cs-text">
+                From excavation and grading to underground utilities and structural repairs, Redwood Engineering
+                Construction delivers reliable, code-compliant work for residential, commercial, and public sector
+                projects throughout the Bay Area.
+            </p>
+        </div>
+
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <a href="/grading-excavation" class="cs-link">
+                    <h3 class="cs-h3">Grading & Excavation</h3>
+                </a>
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/webp/excavate-m.webp">
+                    <source media="(min-width: 601px)" srcset="/assets/images/webp/excavate.webp">
+                    <img src="/assets/images/webp/excavate.webp" alt="grading and excavation" width="384" height="480"
+                        loading="lazy" decoding="async">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <a href="/cityscape-projects" class="cs-link">
+                    <h3 class="cs-h3">Cityscape Projects</h3>
+                </a>
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/webp/storm-drain-m.webp">
+                    <source media="(min-width: 601px)" srcset="/assets/images/webp/storm-drain.webp">
+                    <img src="/assets/images/webp/storm-drain.webp" alt="drainage systems" width="384" height="480"
+                        loading="lazy" decoding="async">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <a href="/landslide-repairs" class="cs-link">
+                    <h3 class="cs-h3">Slide Repair</h3>
+                </a>
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/webp/slope-m.webp">
+                    <source media="(min-width: 601px)" srcset="/assets/images/webp/slope.webp">
+                    <img src="/assets/images/webp/slope.webp" alt="retaining wall" width="384" height="480"
+                        loading="lazy" decoding="async">
+                </picture>
+
+            </li>
+            <li class="cs-item">
+                <a href="/backup-generators" class="cs-link">
+                    <h3 class="cs-h3">Backup Generators</h3>
+                </a>
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/webp/generator-m.webp">
+                    <source media="(min-width: 601px)" srcset="/assets/images/webp/generator.webp">
+                    <img src="/assets/images/webp/generator.webp" alt="backup generator installation" width="384"
+                        height="480" loading="lazy" decoding="async">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <a href="/parks-playgrounds" class="cs-link">
+                    <h3 class="cs-h3">Park & Playground Projects</h3>
+                </a>
+                <picture class="cs-picture">
+                    <img src="/assets/images/webp/playground-d.webp" alt="city park project" width="384" height="480"
+                        loading="lazy" decoding="async">
+                </picture>
+            </li>
+        </ul>
+
+    </div>
+</section>
+
+
+<!-- ============================================ -->
+<!--                    Stats                     -->
+<!-- ============================================ -->
+
+<section id="stats-1659">
+    <div class="cs-container">
+        <picture class="cs-picture">
+            <source media="(max-width: 600px)" srcset="/assets/images/webp/people-m.webp">
+            <source media="(min-width: 601px)" srcset="/assets/images/webp/people.webp">
+            <img loading="lazy" decoding="async" src="/assets/images/webp/people.webp" alt="volunteers" width="630"
+                height="601" aria-hidden="true">
+        </picture>
+        <div class="cs-content">
+            <div class="cs-flex">
+                <span class="cs-topper">By the Numbers</span>
+                <h2 class="cs-title">Proven Results Across the Bay Area</h2>
                 <p class="cs-text">
-                    We take pride in delivering quality work and dependable service on every project. Here's what clients across the Bay Area have to say about partnering with Redwood Engineering Construction.
+                    Redwood Engineering Construction brings years of hands-on experience, trusted municipal
+                    partnerships, and a proven track record of quality craftsmanship to every project — big or small.
                 </p>
             </div>
-            <ul class="cs-card-group">
-                <li class="cs-item">
-                    <img class="cs-icon" src="./assets/svgs/quote.svg" alt="quote icon" aria-hidden="true" width="40" height="38" loading="lazy" decoding="async">
-                    <h3 class="cs-h3">The staff was incredibly helpful</h3>
-                    <p class="cs-item-text">
-                        Sergio and Miguel went above and beyond in helping me and my mother and due to their superior service, I will definitely become a repeat customer and recommend Redwood Engineering Construction to all of my friends and family who need their services.
-                    </p>
-                    <span class="cs-name">Rose A.</span>
-                    <span class="cs-text">Redwood City, CA</span>
+            <ul class="cs-stat-group">
+                <li class="cs-stat">
+                    <span class="cs-number">-</span>
+                    <span class="cs-desc">Public and Private Projects Completed</span>
                 </li>
-                <li class="cs-item">
-                    <img class="cs-icon" src="./assets/svgs/quote.svg" alt="quote icon" aria-hidden="true" width="40" height="38" loading="lazy" decoding="async">
-                    <h3 class="cs-h3">Expect Ben to get the job done right</h3>
-                    <p class="cs-item-text">
-                        I have hired several bobcat excavation operators over the years and have had consistently good service from Redwood hence my comming back to him time and again. Over the different jobs he has done for me he has been able to add experience and expertise to my plans giving me options I had never considered.
-                    </p>
-                    <span class="cs-name">Josh W</span>
-                    <span class="cs-text">San Ramon, CA</span>
+                <li class="cs-stat">
+                    <span class="cs-number">-</span>
+                    <span class="cs-desc">Bay Area Municipal Clients</span>
+                </li>
+                <li class="cs-stat">
+                    <span class="cs-number">-</span>
+                    <span class="cs-desc">Satisfied Customers</span>
+                </li>
+                <li class="cs-stat">
+                    <span class="cs-number">2015</span>
+                    <span class="cs-desc">Proudly Serving Since</span>
                 </li>
             </ul>
         </div>
-    </section>
-                                
-                                
-                                
-                                
-                                
-                                
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                   Reviews                    -->
+<!-- ============================================ -->
+
+<section id="reviews-727">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Testimonials</span>
+            <h2 class="cs-title">What Our Clients Say</h2>
+            <p class="cs-text">
+                We take pride in delivering quality work and dependable service on every project. Here's what clients
+                across the Bay Area have to say about partnering with Redwood Engineering Construction.
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <img class="cs-icon" src="./assets/svgs/quote.svg" alt="quote icon" aria-hidden="true" width="40"
+                    height="38" loading="lazy" decoding="async">
+                <h3 class="cs-h3">The staff was incredibly helpful</h3>
+                <p class="cs-item-text">
+                    Sergio and Miguel went above and beyond in helping me and my mother and due to their superior
+                    service, I will definitely become a repeat customer and recommend Redwood Engineering Construction
+                    to all of my friends and family who need their services.
+                </p>
+                <span class="cs-name">Rose A.</span>
+                <span class="cs-text">Redwood City, CA</span>
+            </li>
+            <li class="cs-item">
+                <img class="cs-icon" src="./assets/svgs/quote.svg" alt="quote icon" aria-hidden="true" width="40"
+                    height="38" loading="lazy" decoding="async">
+                <h3 class="cs-h3">Expect Ben to get the job done right</h3>
+                <p class="cs-item-text">
+                    I have hired several bobcat excavation operators over the years and have had consistently good
+                    service from Redwood hence my comming back to him time and again. Over the different jobs he has
+                    done for me he has been able to add experience and expertise to my plans giving me options I had
+                    never considered.
+                </p>
+                <span class="cs-name">Josh W</span>
+                <span class="cs-text">San Ramon, CA</span>
+            </li>
+        </ul>
+    </div>
+</section>
 
 
 
-    {% include 'components/cta.html' %}
+
+
+
+
+
+
+{% include 'components/cta.html' %}
 {% endblock %}
