@@ -231,6 +231,7 @@
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
+  body.dark-mode #sbs-2291 .cs-topper,
   body.dark-mode #sbs-2291 .cs-title,
   body.dark-mode #sbs-2291 .cs-text,
   body.dark-mode #sbs-2291 .cs-h3,
@@ -438,6 +439,9 @@
   body.dark-mode #services-1732 {
     background-color: var(--medium);
   }
+  body.dark-mode #services-1732 .cs-topper {
+    color: white;
+  }
   body.dark-mode #services-1732 .cs-title,
   body.dark-mode #services-1732 .cs-text {
     color: var(--bodyTextColorWhite);
@@ -590,6 +594,12 @@
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
+  body.dark-mode #stats-1659 .cs-topper {
+    color: white;
+  }
+  body.dark-mode #stats-1659 .cs-desc {
+    color: white;
+  }
   body.dark-mode #stats-1659 .cs-title,
   body.dark-mode #stats-1659 .cs-text,
   body.dark-mode #stats-1659 .cs-number {
@@ -743,6 +753,9 @@
   body.dark-mode #reviews-727 .cs-item-text,
   body.dark-mode #reviews-727 .cs-name {
     color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #reviews-727 .cs-topper {
+    color: #ffffff;
   }
   body.dark-mode #reviews-727 .cs-text {
     opacity: 0.8;

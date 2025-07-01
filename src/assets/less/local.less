@@ -233,6 +233,7 @@
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
+  body.dark-mode #sbs-2291 .cs-topper,
   body.dark-mode #sbs-2291 .cs-title,
   body.dark-mode #sbs-2291 .cs-text,
   body.dark-mode #sbs-2291 .cs-h3,
@@ -478,7 +479,9 @@
     body.dark-mode {
         #services-1732 {
           background-color: var(--medium);
-
+          .cs-topper{
+            color: white;
+          }
           .cs-title, .cs-text {
               color: var(--bodyTextColorWhite);
           }       
@@ -636,6 +639,12 @@
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
+  body.dark-mode #stats-1659 .cs-topper{
+    color: white;
+  }
+   body.dark-mode #stats-1659 .cs-desc{
+    color: white;
+  }
   body.dark-mode #stats-1659 .cs-title,
   body.dark-mode #stats-1659 .cs-text,
   body.dark-mode #stats-1659 .cs-number {
@@ -810,6 +819,10 @@
             .cs-item-text,
             .cs-name {
                 color: var(--bodyTextColorWhite);
+            }
+            
+            .cs-topper {
+              color: rgb(255, 255, 255);
             }
 
             .cs-text {
