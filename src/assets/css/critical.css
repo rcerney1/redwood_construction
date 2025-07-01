@@ -85,6 +85,9 @@
   #hero-1249 .cs-button-solid:hover:before {
     width: 100%;
   }
+  #hero-1249 .cs-button-solid:hover {
+    color: white;
+  }
   #hero-1249 .cs-card-group {
     /* changes to -150px at tablet */
     margin: 0 0 -40.875rem 0;
