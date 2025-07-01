@@ -60,12 +60,11 @@
     font-weight: 700;
     min-width: 9.375rem;
     margin: 0;
-    color: #a39494;
+    color: #000000;
     padding: 0 1.5rem;
     overflow: hidden;
     border-radius: 0.25rem;
-    /* background-color: var(--primary); */
-    background-color: blue;
+    background-color: var(--primary);
     display: inline-block;
     position: relative;
     z-index: 1;
