@@ -11,6 +11,19 @@
         position: relative;
         z-index: 10;
 
+        #hero-1249 {
+            .cs-item:first-child .cs-item-background {
+                background-image: url("/assets/images/webp/playground-m.webp");
+                background-size: cover;
+                background-position: center;
+            }
+
+            .cs-item:first-child .cs-item-background img {
+                display: none;
+            }
+        }
+
+
         .cs-container {
             width: 100%;
             max-width: (1280/16rem);
@@ -92,6 +105,7 @@
                 &:before {
                     width: 100%;
                 }
+
                 color: white;
             }
         }
@@ -219,21 +233,17 @@
                 display: block;
                 height: 100%;
                 width: 100%;
-                background: -moz-linear-gradient(
-                    top,
-                    rgba(0, 0, 0, 0) 0%,
-                    rgba(0, 0, 0, 1) 100%
-                ); /* FF3.6-15 */
-                background: -webkit-linear-gradient(
-                    top,
-                    rgba(0, 0, 0, 0) 0%,
-                    rgba(0, 0, 0, 1) 100%
-                ); /* Chrome10-25,Safari5.1-6 */
-                background: linear-gradient(
-                    to bottom,
-                    rgba(0, 0, 0, 0) 0%,
-                    rgba(0, 0, 0, 1) 100%
-                );
+                background: -moz-linear-gradient(top,
+                        rgba(0, 0, 0, 0) 0%,
+                        rgba(0, 0, 0, 1) 100%);
+                /* FF3.6-15 */
+                background: -webkit-linear-gradient(top,
+                        rgba(0, 0, 0, 0) 0%,
+                        rgba(0, 0, 0, 1) 100%);
+                /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(to bottom,
+                        rgba(0, 0, 0, 0) 0%,
+                        rgba(0, 0, 0, 1) 100%);
                 opacity: 0.4;
                 bottom: 0;
                 left: 0;
@@ -297,6 +307,7 @@
 @media only screen and (min-width: 48rem) {
     #hero-1249 {
         padding-bottom: 0;
+
         .cs-card-group {
             margin-bottom: (-150/16rem);
         }
@@ -317,6 +328,7 @@
             background-repeat: no-repeat;
             /* creates the parallax effect */
             background-attachment: fixed;
+
             img {
                 display: none;
             }
@@ -324,4 +336,15 @@
     }
 }
 
-                               
+// test
+
+@media only screen and (max-width: 47.99rem) {
+  #hero-1249 {
+    .cs-item:first-child .cs-item-background {
+      &:before,
+      &:after {
+        display: none;
+      }
+    }
+  }
+}
