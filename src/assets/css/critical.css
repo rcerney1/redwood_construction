@@ -10,6 +10,14 @@
     position: relative;
     z-index: 10;
   }
+  #hero-1249 #hero-1249 .cs-item:first-child .cs-item-background {
+    background-image: url("/assets/images/webp/playground-m.webp");
+    background-size: cover;
+    background-position: center;
+  }
+  #hero-1249 #hero-1249 .cs-item:first-child .cs-item-background img {
+    display: none;
+  }
   #hero-1249 .cs-container {
     width: 100%;
     max-width: 80rem;
@@ -82,11 +90,11 @@
     z-index: -1;
     transition: width 0.3s;
   }
-  #hero-1249 .cs-button-solid:hover:before {
-    width: 100%;
-  }
   #hero-1249 .cs-button-solid:hover {
     color: white;
+  }
+  #hero-1249 .cs-button-solid:hover:before {
+    width: 100%;
   }
   #hero-1249 .cs-card-group {
     /* changes to -150px at tablet */
@@ -276,6 +284,12 @@
     background-attachment: fixed;
   }
   #hero-1249 .cs-background img {
+    display: none;
+  }
+}
+@media only screen and (max-width: 47.99rem) {
+  #hero-1249 .cs-item:first-child .cs-item-background:before,
+  #hero-1249 .cs-item:first-child .cs-item-background:after {
     display: none;
   }
 }
