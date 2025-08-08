@@ -101,6 +101,26 @@
     grid-gap: clamp(0.5rem, 2vw, 1.25rem);
     grid-template-rows: repeat(20, 1fr);
   }
+  #gallery-483 .cs-grid-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Single column */
+    grid-gap: 1rem;
+    /* Gap between images */
+  }
+  #gallery-483 .cs-pic1,
+  #gallery-483 .cs-pic2 {
+    width: 100%;
+    /* Ensure the image fills the width of the grid */
+    height: 100%;
+    /* Ensure the image fills the height of its grid area */
+    object-fit: cover;
+    /* Prevent stretching while maintaining aspect ratio */
+    border-radius: 2rem;
+    /* Maintain rounded corners */
+    display: block;
+    position: relative;
+  }
   #gallery-483 .cs-picture {
     border-radius: 0.5rem;
     /* clips corners of img tags */
@@ -113,6 +133,13 @@
     height: 100%;
     /* makes image behave like a background image */
     object-fit: cover;
+  }
+  #gallery-483 .cs-pic1 {
+    grid-row: 1/2;
+  }
+  #gallery-483 .cs-pic2 {
+    grid-row: 2/3;
+    height: 35rem;
   }
   #gallery-483 .cs-picture1 {
     grid-column: 1 / 7;
@@ -141,7 +168,7 @@
   }
   #gallery-483 .cs-content {
     max-width: 39.375rem;
-    justify-content: flex-end;
+    justify-content: flex-start;
   }
   #gallery-483 .cs-text {
     width: 85%;
