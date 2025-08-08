@@ -543,6 +543,9 @@
     color: black;
     display: block;
   }
+  #stats-1659 .small {
+    font-size: 0.75rem;
+  }
   #stats-1659 .cs-picture {
     width: 100%;
     max-width: 39.375rem;
