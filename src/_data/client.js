@@ -8,7 +8,7 @@ module.exports = {
         "lineTwo": "",
         "city": "San Francisco",
         "state": "CA",
-        "zip": "80206",
+        "zip": "94124",
         "country": "US",
         "mapLink": "https://maps.app.goo.gl/KzMWXNifBcvSktBaA"
     },
